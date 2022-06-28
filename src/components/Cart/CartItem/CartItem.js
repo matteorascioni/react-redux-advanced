@@ -1,15 +1,32 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { cartActions } from '../../../store/cart-slice';
 import Button from '../../Button/Button';
 
 import styles from './CartItem.module.css';
 
 const CartItem = (props) => {
-  const { headline, quantity, total, price } = props.item;
+  const { title, quantity, total, price, id} = props.item;
+  const dispatch = useDispatch();
+
+  const removeItemHandler = () => {
+    dispatch(cartActions.removeItemFromCart(id));
+  }
+
+  const addItemHandler = () => {
+    dispatch(
+      cartActions.addItemToCart({
+        id,
+        title,
+        price,
+    }));
+  }
+
   return (
     <li className={styles.container}>
       <div>
-        {/* Headline */}
-        <h3 className={styles.headline}>{headline}</h3>
+        {/* title */}
+        <h3 className={styles.title}>{title}</h3>
         {/* Price */}
         <div className={styles.price}>
           ${total.toFixed(2)}{' '}
@@ -26,8 +43,18 @@ const CartItem = (props) => {
         </div>
         {/* Buttons Container */}
         <div className={styles.buttonsContainer}>
-          <Button className={styles.button}>-</Button>
-          <Button className={styles.button}>+</Button>
+          <Button 
+            onClick={removeItemHandler} 
+            className={styles.button}
+          >
+            -
+          </Button>
+          <Button 
+            onClick={addItemHandler} 
+            className={styles.button}
+          >
+            +
+          </Button>
         </div>
       </div>
     </li>

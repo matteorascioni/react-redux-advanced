@@ -1,13 +1,15 @@
 .container {
-  padding: 4px 0;
-  padding-left: var(--spacing3);
-  border-radius: 30px;
+  padding: var(--spacing) var(--spacing4);
+  border: 1px solid var(--tiffany-blue);
+  border-radius: 4px;
+  transition: background-color var(--transition-default-timing);
+  background-color: transparent;
   color: var(--tiffany-blue);
 }
 
 .container:hover,
 .container:active {
-  color: var(--white);
+  background-color: var(--white);
 }
 
 /* Title */
@@ -17,7 +19,7 @@
 
 /* Badge */
 .badge {
-  padding: 2.4px var(--spacing3);
+  padding: 4px var(--spacing3);
   border-radius: 30px;
   background-color: var(--tiffany-blue);
   color: var(--erie-black);
