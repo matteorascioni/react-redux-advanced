@@ -1,0 +1,16 @@
+.container {
+    font: inherit;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid var(--cyan-cornflower-blue);
+    color: var(--cyan-cornflower-blue);
+}
+  
+.container:hover,
+.container:active {
+    background-color: var(--battery-charged-blue);
+    border-color: var(--battery-charged-blue);
+    color: var(--white);
+}

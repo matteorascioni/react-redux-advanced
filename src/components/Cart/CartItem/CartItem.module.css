@@ -1,0 +1,63 @@
+.container {
+  margin: var(--spacing2) 0;
+  padding: var(--spacing2);
+  background-color: var(--davys-grey);
+}
+
+.container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* Headline */
+.headline {
+  font-size: 1.75rem;
+}
+
+/* Price */
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Item Price */
+.itemprice {
+  font-weight: normal;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* Details */
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Quantity Span */
+.quantitySpan {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Buttons Container */
+.buttonsContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin: var(--spacing) 0;
+}
+
+.buttonsContainer .button {
+  margin-left: var(--spacing);
+  padding: 4px var(--spacing2);
+  border: 1px solid var(--white);
+  background-color: transparent;
+  color: var(--white);
+}
+
+.buttonsContainer .button:hover,
+.buttonsContainer .button:active {
+  background-color: var(--quartz);
+  color: var(--white);
+}

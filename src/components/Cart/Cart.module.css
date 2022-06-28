@@ -1,0 +1,16 @@
+/* Container */
+.container {
+  background-color: var(--dark-charcoal);
+  color: var(--white);
+}
+
+/* Headline */
+.headline {
+  font-size: 1.25rem;
+  margin:var(--spacing) 0;
+}
+
+/* List */
+.list {
+  list-style: none;
+}

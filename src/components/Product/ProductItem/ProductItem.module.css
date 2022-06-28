@@ -1,0 +1,33 @@
+.container {
+  margin: var(--spacing) 0;
+  font-size: 1.25rem;
+}
+
+/* Title and price container */
+.titleAndPriceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--spacing2);
+}
+
+/* Price */
+.price {
+  font-size: 1.5rem;
+  padding: 4px var(--spacing3);
+  border-radius: 30px;
+  background-color: var(--black-olive);
+  color: var(--white);
+}
+
+/* Description */
+.description {
+  margin-bottom: var(--spacing2);
+  color: var(--black-olive);
+}
+
+/* Button container */
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}

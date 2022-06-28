@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--spacing3) var(--spacing5);
+  background-color: var(--raisin-black);
+}
+
+/* Headline */
+.headline {
+  color: var(--white);
+}
+
+/* List */
+.list { 
+  list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--spacing2);
+  }
+
+  .headline {
+    margin-bottom: var(--spacing2);
+  }
+
+  /* List */
+  .listItem{
+    margin-bottom: var(--spacing2);
+  }
+}

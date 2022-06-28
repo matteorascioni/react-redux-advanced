@@ -1,0 +1,12 @@
+/* Headline */
+.headline {
+  text-align: center;
+  text-transform: uppercase;
+  margin: var(--spacing4) auto;
+  color: var(--white);
+}
+
+/* List */
+.list{
+  list-style: none;
+}
