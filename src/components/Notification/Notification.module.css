@@ -1,0 +1,23 @@
+.notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    padding: var(--spacing) 10%;
+    background-color: var(--cyan-cornflower-blue);
+    color: var(--white);
+  }
+  
+  .headline,
+  .message {
+    font-size: 1rem;
+  }
+  
+  .error {
+    background-color: var(--blood-red);
+  }
+  
+  .success {
+    background-color: var(--tiffany-blue);
+  }
